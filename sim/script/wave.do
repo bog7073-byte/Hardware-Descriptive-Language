@@ -1,12 +1,12 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /generic_adder_arch_tb/uut/a
-add wave -noupdate /generic_adder_arch_tb/uut/b
-add wave -noupdate /generic_adder_arch_tb/uut/cin
-add wave -noupdate /generic_adder_arch_tb/uut/sum
-add wave -noupdate /generic_adder_arch_tb/uut/cout
-add wave -noupdate /generic_adder_arch_tb/uut/sum_temp
-add wave -noupdate /generic_adder_arch_tb/uut/cin_guard
+add wave -noupdate /generic_adder_tb/uut/a
+add wave -noupdate /generic_adder_tb/uut/b
+add wave -noupdate /generic_adder_tb/uut/cin
+add wave -noupdate /generic_adder_tb/uut/sum
+add wave -noupdate /generic_adder_tb/uut/cout
+add wave -noupdate /generic_adder_tb/uut/sum_temp
+add wave -noupdate /generic_adder_tb/uut/cin_guard
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {1 ps} 0}
 quietly wave cursor active 1
