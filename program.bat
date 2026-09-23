@@ -1,0 +1,1 @@
+quartus_pgm --mode=JTAG -o P;output_files\Counter_Sim.sof@2
