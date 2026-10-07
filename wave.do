@@ -13,10 +13,15 @@ radix define States {
     -default default
 }
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /top/uut/clk
-add wave -noupdate /top/uut/reset
-add wave -noupdate /top/uut/bcd
-add wave -noupdate -radix States /top/uut/seven_seg_out
+add wave -noupdate /tb_top/clk
+add wave -noupdate /tb_top/reset
+add wave -noupdate /tb_top/add_btn
+add wave -noupdate /tb_top/sub_btn
+add wave -noupdate -radix hexadecimal /tb_top/sw_a
+add wave -noupdate -radix hexadecimal /tb_top/sw_b
+add wave -noupdate -radix hexadecimal /tb_top/HEX4
+add wave -noupdate -radix hexadecimal /tb_top/HEX2
+add wave -noupdate -radix hexadecimal /tb_top/HEX0
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {50000 ps} 0}
 quietly wave cursor active 1
